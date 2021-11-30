@@ -34,7 +34,7 @@ An `FSFTBuffer` supports the following operations:
 * `FSFTBuffer(int capacity, int timeout)`: Create an instance of `FSFTBuffer` with a given `capacity` and with `timeout` representing the duration of time (in seconds) for which an object should be retained in the buffer (unless it is removed because of capacity limitations).
 
 * `boolean put(T t)`: add a value to the buffer and return true if the value was successfully added and false otherwise. When a value is added to an instance of `FSFTBuffer` and the buffer is full then the new object should remove the least recently used object. (Note that objects that have timed out should be remove first.)
-* `T get(String id)`: Retrieve an object from the buffer. When an object is retrieved at time **timeInSeconds** from the buffer, it is "used" at that time and it will now timeout at the absolute time **timeInSeconds + timeout**.
+* `T get(String id)`: Retrieve an object from the buffer. When an object is retrieved at time **timeInSeconds** from the buffer, it is "used" at that time.
 * `boolean touch(String id)`: This method, when called at time **timeInSeconds**, updates the absolute timeout time for the object with `id` to **timeInSeconds + timeout**. This method returns **true** if an object was touched and **false** if no object with `id` exists in the buffer.
 
 An **FSFTBuffer** can be used to implement a data cache.
