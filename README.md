@@ -248,7 +248,7 @@ These methods only count the `String`s passed as arguments and not the actual me
 
 `zeitgeist` was something Google used to support and has evolved into [Google Trends](https://trends.google.com/trends/?geo=US).
 
-**peakLoad30s**: This method tracks all requests to a `WikiMediator` instance including requests for `peakLoad30s`.
+**windowedPeakLoad**: This method tracks all requests to a `WikiMediator` instance including requests for `windowedPeakLoad`.
 
 **Storing statistics**
 
