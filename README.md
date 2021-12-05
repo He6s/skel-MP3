@@ -112,7 +112,7 @@ For example, the following request
 ```json
 {
 	"id": "3",
-	"type": "search",
+	"type": "getPage",
 	"pageTitle": "Philosophy",
 	"timeout": "1"
 }
