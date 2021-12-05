@@ -252,7 +252,7 @@ These methods only count the `String`s passed as arguments and not the actual me
 
 **Storing statistics**
 
-- It is sufficient to log all requests in some form to disk so that when an instance of `WikiMediator` is started (after a shutdown) one can restore data needed to compute statistics for `trending`, `zeitgeist` and `peakLoad30s`. You may want to think carefully about when your write data to disk.
+- It is sufficient to log all requests in some form to disk so that when an instance of `WikiMediator` is started (after a shutdown) one can restore data needed to compute statistics for `trending`, `zeitgeist` and `windowedPeakLoad`. You may want to think carefully about when your write data to disk.
 - We will use the directory name `local` with no further path specifications when we test your implementation. A directory with this name exists in the skeleton code structure that was provided and that is where you should storing all the data. If this directory is empty (except for the `.keep` file) then you should assume there is no history to load.
 
 **Multiple requests**
